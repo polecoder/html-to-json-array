@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Anaheim&display=swap');
+
+:root {
+  --gray: #979DAC;
+  --purple: #C8B6FF;
+  --blue: #0B2545;
+  --font: 'Anaheim', sans-serif;
+}
+
+/*********/
+/* RESET */
+/*********/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+/********/
+/* CODE */
+/********/
+
+.container {
+  max-width: 800px;
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--gray);
+  color: var(--blue);
+}
+
+h1 {
+  padding: 1rem;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+button {
+  font-family: var(--font);
+  cursor: pointer;
+}
+
+textarea {
+  margin-block: 1rem;
+  padding: 1rem;
+  padding-top: 3.5rem;
+  min-width: 270px;
+  max-width: 500px;
+  min-height: 350px;
+  resize: vertical;
+  border-radius: .5rem;
+  text-align: left;
+  border: none;
+  font-family: var(--font);
+}
+
+textarea::placeholder {
+  color: var(--gray);
+}
+
+.textarea {
+  position: relative;
+}
+
+.textarea-header {
+  position: absolute;
+  background-color: var(--blue);
+  color: white;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  width: 100%;
+  top: 16px;
+  padding: .3rem .5rem;
+  display: flex;
+  justify-content: space-between;
+  height: 45px;
+}
+
+#convertBtn {
+  margin-block: 1rem;
+  padding: .5rem 1rem;
+  background-color: var(--blue);
+  color: white;
+  border: none;
+  border-radius: .5rem;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+#convertBtn:hover {
+  background-color: white;
+  color: var(--blue);
+}
+
+#copy {
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding-inline: .4rem;
+  display: flex;
+  align-items: center;
+}
+
+span {
+  font-size: 0.8125rem; /* 13px */
+  line-height: 35.41px;
+  margin-left: 0.5rem;
+}
+
+p a {
+  color: white;
+}
+
+section div {
+  padding: 1rem;
+}
+
+section div p {
+  color: white;
+  margin-block: .5rem 1rem;
+}
+
+footer {
+  padding: 2rem;
+  background-color: var(--blue);
+  color: white;
+  margin-top: 1rem;
+}
+
+footer div {
+  padding-inline: 2rem;
+  margin-inline: auto;
+}
+
+footer div p {
+  text-align: center;
+}

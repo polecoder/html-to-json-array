@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML to JSON Array Converter</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <h1>HTML to JSON Array Converter</h1>
+  <div class="container">
+    <main>
+      <form>
+        <div class="textarea">
+          <div class="textarea-header">
+            <span>Enter HTML</span>
+          </div>
+          <textarea id="htmlText" placeholder="Enter HTML here"></textarea>
+        </div>
+        <button id="convertBtn" type="button">Convert</button>
+        <div class="textarea">
+          <div class="textarea-header">
+            <span>JSON Result</span>
+            <button type="button" id="copy">
+              <img src="./img/copy.svg" alt="Icon">
+              <span>Copy code</span>
+            </button>
+          </div>
+          <textarea id="jsonText" placeholder="JSON Array will appear here" readonly></textarea>
+        </div>
+      </form>
+    </main>
+    <section>
+      <div>
+        <h2>Description</h2>
+        <p>This converts a fragment of HTML code into a JSON formatted array. The array is made of all the individual HTML lines transformed into strings.</p>
+      </div>
+      <div>
+        <h2>How to use?</h2>
+        <p>Enter your HTML code in the first textarea and click on the "Convert" button. The JSON Array will appear in the second textarea. You can copy the JSON Array by clicking on the "Copy code" button. Make sure that the text is indented correctly, if not, the JSON result will inherit the wrong indentation.</p>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <div>
+      <p class="text-center">Created by <a href="https://github.com/polecoder" class="underline">polecoder</a>.</p>
+    </div>
+  </footer>
+  
+  <script src="./js/main.js"></script>
+</body>
+</html>
