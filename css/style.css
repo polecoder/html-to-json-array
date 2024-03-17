@@ -26,7 +26,8 @@ textarea:focus {
 /********/
 
 .container {
-  max-width: 800px;
+  max-width: 1000px;
+  margin-inline: auto;
 }
 
 body {
@@ -48,6 +49,13 @@ form {
   padding: 1rem;
 }
 
+@media (min-width: 768px) {
+  form {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 button {
   font-family: var(--font);
   cursor: pointer;
@@ -57,14 +65,20 @@ textarea {
   margin-block: 1rem;
   padding: 1rem;
   padding-top: 3.5rem;
-  min-width: 270px;
-  max-width: 500px;
-  min-height: 350px;
-  resize: vertical;
+  width: 270px;
+  height: 350px;
+  resize: none;
   border-radius: .5rem;
   text-align: left;
   border: none;
   font-family: var(--font);
+}
+
+@media (min-width: 1200px) {
+  textarea {
+    width: 400px;
+    height: 450px;
+  }
 }
 
 textarea::placeholder {
@@ -98,6 +112,7 @@ textarea::placeholder {
   border-radius: .5rem;
   cursor: pointer;
   transition: all .3s;
+  font-size: 1.125rem; /* 18px */
 }
 
 #convertBtn:hover {

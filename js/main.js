@@ -13,8 +13,8 @@ document.getElementById('copy').addEventListener('click', function() {
   jsonElement.select();
   navigator.clipboard.writeText(jsonElement.value)
         .then(() => {
-            const span = document.getElementsByTagName('span')[0];
-            const img = document.getElementsByTagName('img')[0];
+            const span = document.getElementById('copyText');
+            const img = document.getElementById('copyImg');
             span.textContent = 'Copied!';
             img.src = './img/check.svg';
             setTimeout(() => {

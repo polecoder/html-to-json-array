@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML to JSON Array Converter</title>
+  <title>HTML to JSON Array</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
 </head>
 <body>
-  <h1>HTML to JSON Array Converter</h1>
+  <h1>HTML to JSON Array</h1>
   <div class="container">
     <main>
       <form>
@@ -22,8 +23,8 @@
           <div class="textarea-header">
             <span>JSON Result</span>
             <button type="button" id="copy">
-              <img src="./img/copy.svg" alt="Icon">
-              <span>Copy code</span>
+              <img id="copyImg" src="./img/copy.svg" alt="Icon">
+              <span id="copyText">Copy code</span>
             </button>
           </div>
           <textarea id="jsonText" placeholder="JSON Array will appear here" readonly></textarea>
